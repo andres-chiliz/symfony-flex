@@ -15,7 +15,7 @@
                     "rector.php": "rector.php"
                 },
                 "makefile": [
-                    "-include vendor/chiliz/code-quality/make/code-quality.mk"
+                    "-include vendor/chiliz/code-quality/make/code_quality.mk"
                 ]
             },
             "files": {
@@ -422,7 +422,7 @@
                         "            'import_functions' => false,",
                         "        ],",
                         "    ])",
-                        "    ;",
+                        ";",
                         ""
                     ],
                     "executable": false
@@ -444,7 +444,7 @@
                         "    <rule ref=\"PSR12\"/>",
                         "",
                         "    <exclude-pattern>src/Migrations/*</exclude-pattern>",
-                        "    <exclude-pattern>migrations</exclude-pattern>",
+                        "    <exclude-pattern>migrations/*</exclude-pattern>",
                         "</ruleset>",
                         ""
                     ],
@@ -529,7 +529,6 @@
                         "    bootstrapFiles:",
                         "        - vendor/autoload.php",
                         "    excludePaths:",
-                        "        - src/Rector/Rule/AnnotationToAttributeRector.php",
                         "    checkMissingIterableValueType: false",
                         "    inferPrivatePropertyTypeFromConstructor: true",
                         "    checkGenericClassInNonGenericObjectType: false",
@@ -550,7 +549,7 @@
                         "",
                         "declare(strict_types=1);",
                         "",
-                        "use Darkanakin41\\CodeQuality\\Rector\\RectorConfigurator;",
+                        "use Chiliz\\CodeQuality\\Rector\\RectorConfigurator;",
                         "use Rector\\Config\\RectorConfig;",
                         "",
                         "return static function (RectorConfig $rectorConfig): void {",
@@ -562,7 +561,7 @@
                     "executable": false
                 }
             },
-            "ref": "9cc50576b666501c5b630c3186f9d97913423b79"
+            "ref": "ed14f515693f756d27ce7ea33790fd2ae496c583"
         }
     }
 }

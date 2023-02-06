@@ -1,6 +1,6 @@
-# darkanakin41/symfony-flex
+# chiliz/symfony-flex
 
-This repository is the source of darkanakin41's bundles recipes for symfony/flex.
+This repository is the source of chiliz's bundles recipes for symfony/flex.
 
 In order to use it, you need to have the following configuration in your `composer.json`:
 ```json
