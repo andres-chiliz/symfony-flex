@@ -1,0 +1,22 @@
+{
+    "name": "chiliz/symfony-flex",
+    "description": "Symfony Flex assets container",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Chiliz\\SymfonyFlex\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pierre LEJEUNE",
+            "email": "pierre.lejeune@chiliz.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "^6.2",
+        "symfony/yaml": "^6.2",
+        "symfony/filesystem": "^6.2",
+        "symfony/finder": "^6.2"
+    }
+}
