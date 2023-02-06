@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+    php:
+        build:
+            context: .
+            target: php-development
+        volumes:
+            - .:/shared:delegated
+            - ~/.composer:/root/.composer:delegated
+        environment:
+            - COMPOSER_AUTH

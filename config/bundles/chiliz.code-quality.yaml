@@ -1,0 +1,14 @@
+chiliz/code-quality:
+  v1.0:
+    gitignore:
+      - .php-cs-fixer.cache
+      - .phpcs-cache
+    copyFromRecipe:
+      - .editorconfig
+      - .php-cs-fixer.dist.php
+      - phpcs.xml.dist
+      - phpmd.xml
+      - phpstan.neon
+      - rector.php
+    makefile:
+      - "-include vendor/chiliz/code-quality/make/code_quality.mk"
