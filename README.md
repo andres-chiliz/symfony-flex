@@ -8,9 +8,9 @@ In order to use it, you need to have the following configuration in your `compos
   "extra": {
     "symfony": {
       "allow-contrib": false,
-      "require": "6.2.*",
+      "require": "6.1.*",
       "endpoint": [
-        "https://gitlab.mediarex.com/mediarex/shared/symfony-flex/-/raw/main/recipes/index.json",
+        "https://gitlab.mediarex.com/mediarex/shared/symfony-flex/-/raw/dev/recipes/index.json",
         "flex://defaults"
       ]
     }
