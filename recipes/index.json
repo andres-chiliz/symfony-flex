@@ -4,11 +4,11 @@
             "1.0"
         ]
     },
-    "branch": "main",
+    "branch": "dev",
     "is_contrib": true,
     "_links": {
-        "repository": "gitlab.mediarex.com/mediarex/shared/symfony-flex",
-        "origin_template": "{package}:{version}@gitlab.mediarex.com/mediarex/shared/symfony-flex:main",
-        "recipe_template": "https://gitlab.mediarex.com/mediarex/shared/symfony-flex/-/raw/main/recipes/{package_dotted}.{version}.json"
+        "repository": "gitlab.mediarex.com/mediarex-public/symfony-flex",
+        "origin_template": "{package}:{version}@gitlab.mediarex.com/mediarex-public/symfony-flex:dev",
+        "recipe_template": "https://gitlab.mediarex.com/mediarex-public/symfony-flex/-/raw/dev/recipes/{package_dotted}.{version}.json"
     }
 }

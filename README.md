@@ -10,7 +10,7 @@ In order to use it, you need to have the following configuration in your `compos
       "allow-contrib": false,
       "require": "6.1.*",
       "endpoint": [
-        "https://gitlab.mediarex.com/mediarex/shared/symfony-flex/-/raw/dev/recipes/index.json",
+        "https://gitlab.mediarex.com/mediarex-public/symfony-flex/-/raw/dev/recipes/index.json",
         "flex://defaults"
       ]
     }
@@ -24,6 +24,7 @@ Then all available recipes will be usable in your project.
 
 The contribution is rather simple.
 
+## Configuration
 In the [config/bundles](./config/bundles), you just need to update a bundle file, or create a new one for your bundle.
 
 The configuration file is simple : 
@@ -39,4 +40,5 @@ The configuration file is simple :
 
 Last but not least, if in your bundle asset directory you've created a `after-install.txt` file, this will be automatically parsed and displayed after installing the recipe.
 
-Once, that's done, you just need to run `./bin/sf flex:generate`
+## Generation
+After configuring your bundle, you just need to run `./bin/sf flex:generate` and commit generated files
