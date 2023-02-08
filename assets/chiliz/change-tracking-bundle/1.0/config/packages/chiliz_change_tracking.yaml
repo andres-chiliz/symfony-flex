@@ -1,0 +1,10 @@
+chiliz_change_tracking_bundle:
+    connections:
+        default:
+            serviceName: ChangeMe!
+    export:
+        awsS3:
+            key:    '%env(AWS_IAM_KEY)%'
+            secret: '%env(AWS_IAM_SECRET)%'
+            region: '%env(AWS_REGION)%'
+            bucket: '%env(AWS_S3_BUCKET_CHANGE_TRACKING)%'

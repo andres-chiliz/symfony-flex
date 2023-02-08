@@ -1,0 +1,4 @@
+chiliz/change-tracking-bundle:
+  v1.0:
+    copyFromRecipe:
+      - config/packages/chiliz_change_tracking.yaml
