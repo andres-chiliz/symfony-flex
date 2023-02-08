@@ -2,6 +2,8 @@
 
 This repository is the source of chiliz's bundles recipes for symfony/flex.
 
+The documentation about the way it is working is [available here](https://symfony.com/doc/current/setup/flex_private_recipes.html).
+
 In order to use it, you need to have the following configuration in your `composer.json`:
 ```json
 {
