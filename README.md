@@ -22,11 +22,13 @@ In order to use it, you need to have the following configuration in your `compos
 
 Then all available recipes will be usable in your project.
 
-## Contribution
+You are now able to execute your `composer require|update` as usual, symfony flex will manage the configuration!
 
-The contribution is rather simple.
+## Register a new symfony/flex recipe
 
-## Configuration
+In order to register a new recipe (a set of configuration to be installed while installing/upgrading a bundle), you need to follow the next steps :
+
+### 1. Configuration
 In the [config/bundles](./config/bundles), you just need to update a bundle file, or create a new one for your bundle.
 
 The configuration file is simple : 
@@ -42,5 +44,5 @@ The configuration file is simple :
 
 Last but not least, if in your bundle asset directory you've created a `after-install.txt` file, this will be automatically parsed and displayed after installing the recipe.
 
-## Generation
+### 2. Generation
 After configuring your bundle, you just need to run `./bin/sf flex:generate` and commit generated files
