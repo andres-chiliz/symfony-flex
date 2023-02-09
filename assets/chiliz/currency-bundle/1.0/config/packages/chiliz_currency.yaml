@@ -1,0 +1,5 @@
+currency_bundle:
+    conversion_rates_loader: 'Chiliz\CurrencyBundle\Services\RemoteConversionRatesLoader'
+    cache_adapter: cache.app
+    service_name: '%service_name%'
+    redis: 'RedisCluster'

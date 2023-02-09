@@ -1,0 +1,74 @@
+{
+    "manifests": {
+        "chiliz/service-clients-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Chiliz\\ServiceClientsBundle\\ChilizServiceClientsBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/packages/chiliz_service_clients.yaml": "config/packages/chiliz_service_clients.yaml",
+                    "config/packages/test/chiliz_service_clients.yaml": "config/packages/test/chiliz_service_clients.yaml"
+                },
+                "post-install-output": [
+                    "Congratulations, you've installed chiliz/service-clients-bundle.",
+                    "",
+                    "Now you need to go to config/packages/chiliz_service_clients.yaml and config/packages/test/chiliz_service_clients.yaml and update the configuration.",
+                    ""
+                ]
+            },
+            "files": {
+                "config/packages/chiliz_service_clients.yaml": {
+                    "contents": [
+                        "chiliz_service_clients_bundle:",
+                        "    guzzle_client: 'eight_points_guzzle.client.service_client'",
+                        "    retrieve_credentials_service_client_service: user.retrieve_user_credentials",
+                        "    retrieve_user_location_service_client_service: user.retrieve_user_location",
+                        "    api_proxy_cache_expiration: 300",
+                        "    api_proxy_clients:",
+                        "        chilipay:",
+                        "            base_url: '%env(CHILIPAY_API_PROXY_BASE_URL)%'",
+                        "            consumer_name: '%env(CHILIPAY_API_PROXY_CONSUMER_NAME)%'",
+                        "            consumer_key: '%env(CHILIPAY_API_PROXY_CONSUMER_KEY)%'",
+                        "",
+                        "        chiliz:",
+                        "            base_url: '%env(CHILIZ_API_PROXY_BASE_URL)%'",
+                        "            consumer_name: '%env(CHILIZ_API_PROXY_CONSUMER_NAME)%'",
+                        "            consumer_key: '%env(CHILIZ_API_PROXY_CONSUMER_KEY)%'",
+                        "",
+                        "    client_groups:",
+                        "        chilipay:",
+                        "            api_proxy: 'mediarex.api_proxy.service.chilipay'",
+                        "            consumer_name: '%env(CHILIPAY_API_PROXY_CONSUMER_NAME)%'",
+                        "            dictionaries:",
+                        "                # user",
+                        "                user.retrieve_user_credentials: 'service_client.dictionary.user.get_user_credentials'",
+                        "                user.retrieve_user_location: 'service_client.dictionary.user.get_user_by_id_search'",
+                        "",
+                        "        chiliz:",
+                        "            api_proxy: 'mediarex.api_proxy.service.chiliz'",
+                        "            consumer_name: '%env(CHILIZ_API_PROXY_CONSUMER_NAME)%'",
+                        "            dictionaries:",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "config/packages/test/chiliz_service_clients.yaml": {
+                    "contents": [
+                        "chiliz_service_clients_bundle:",
+                        "    client_groups:",
+                        "        chilipay:",
+                        "            mocked_service_clients:",
+                        "",
+                        "        chiliz:",
+                        "            mocked_service_clients:",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "e5d644494ee50ba7a95f4867b09fcba4e7815a16"
+        }
+    }
+}

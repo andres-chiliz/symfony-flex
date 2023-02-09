@@ -1,0 +1,7 @@
+chiliz_service_clients_bundle:
+    client_groups:
+        chilipay:
+            mocked_service_clients:
+
+        chiliz:
+            mocked_service_clients:

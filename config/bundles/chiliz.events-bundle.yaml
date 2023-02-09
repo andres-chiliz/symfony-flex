@@ -1,0 +1,6 @@
+chiliz/events-bundle:
+  v1.0:
+    bundles:
+      Chiliz\EventsBundle\ChilizEventBundle: ['all']
+    copyFromRecipe:
+      - config/packages/chiliz_events.yaml

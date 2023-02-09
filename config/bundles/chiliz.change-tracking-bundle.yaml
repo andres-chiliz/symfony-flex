@@ -1,4 +1,6 @@
 chiliz/change-tracking-bundle:
   v1.0:
+    bundles:
+      Chiliz\ChangeTrackingBundle\ChilizChangeTrackingBundle: ['all']
     copyFromRecipe:
       - config/packages/chiliz_change_tracking.yaml

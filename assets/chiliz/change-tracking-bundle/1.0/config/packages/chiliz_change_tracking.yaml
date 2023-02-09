@@ -1,7 +1,7 @@
 chiliz_change_tracking_bundle:
     connections:
         default:
-            serviceName: ChangeMe!
+            serviceName: '%service_name%'
     export:
         awsS3:
             key:    '%env(AWS_IAM_KEY)%'

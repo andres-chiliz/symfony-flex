@@ -1,0 +1,36 @@
+{
+    "manifests": {
+        "chiliz/translation-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Chiliz\\TranslationBundle\\ChilizTranslationBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/packages/chiliz_translation.yaml": "config/packages/chiliz_translation.yaml"
+                },
+                "post-install-output": [
+                    "Congratulations, you've installed chiliz/translation-bundle.",
+                    "",
+                    "Now you need to go to config/packages/chiliz_translation.yaml and update the configuration.",
+                    ""
+                ]
+            },
+            "files": {
+                "config/packages/chiliz_translation.yaml": {
+                    "contents": [
+                        "chiliz_translation_bundle:",
+                        "    service_name: '%service_name%'",
+                        "    redis: 'RedisCluster'",
+                        "    upload_lock_ttl: 30",
+                        "    translateMessage: false",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "b1e611ac7a8fb1f7b520f8bd4e87898e8770c932"
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "manifests": {
+        "chiliz/currency-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Chiliz\\CurrencyBundle\\CurrencyBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/packages/chiliz_currency.yaml": "config/packages/chiliz_currency.yaml"
+                },
+                "post-install-output": [
+                    "Congratulations, you've installed chiliz/currency-bundle.",
+                    "",
+                    "Now you need to go to config/packages/chiliz_currency.yaml and update the configuration.",
+                    ""
+                ]
+            },
+            "files": {
+                "config/packages/chiliz_currency.yaml": {
+                    "contents": [
+                        "currency_bundle:",
+                        "    conversion_rates_loader: 'Chiliz\\CurrencyBundle\\Services\\RemoteConversionRatesLoader'",
+                        "    cache_adapter: cache.app",
+                        "    service_name: '%service_name%'",
+                        "    redis: 'RedisCluster'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "524ad7580bedb1de62008999cf4318d42d15e525"
+        }
+    }
+}

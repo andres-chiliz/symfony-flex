@@ -1,0 +1,102 @@
+{
+    "manifests": {
+        "chiliz/be-utilities": {
+            "manifest": {
+                "bundles": {
+                    "Chiliz\\Utilities\\Bundle\\ChilizUtilitiesBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/packages/chiliz_utilities.yaml": "config/packages/chiliz_utilities.yaml"
+                },
+                "post-install-output": [
+                    "Congratulations, you've installed chiliz/be-utilities.",
+                    "",
+                    "Now you need to go to config/packages/chiliz_utilities.yaml and update the configuration.",
+                    ""
+                ]
+            },
+            "files": {
+                "config/packages/chiliz_utilities.yaml": {
+                    "contents": [
+                        "chiliz_utilities_bundle:",
+                        "    global:",
+                        "        serviceName: '%service_name%'",
+                        "    cache :",
+                        "        enabled : true",
+                        "        redisDsn : '%env(string:REDIS_CLUSTER_DSN)%'",
+                        "    encryption:",
+                        "        enabled: true",
+                        "        salt: '%env(string:SALT_KEY)%'",
+                        "        key: '%env(string:ENCRYPTION_KEY)%'",
+                        "        entityManager: '@doctrine.orm.entity_manager'",
+                        "        entityConfiguration:",
+                        "",
+                        "    swagger:",
+                        "        enabled: true",
+                        "    paramConverters:",
+                        "        enabled: true",
+                        "    serializer:",
+                        "        enabled: true",
+                        "    concurrency:",
+                        "        enabled: true",
+                        "    referenceNumber:",
+                        "        enabled: true",
+                        "    response:",
+                        "        enabled: true",
+                        "    pagination:",
+                        "        enabled: true",
+                        "    context:",
+                        "        enabled: true",
+                        "    exceptionHandler:",
+                        "        enabled: true",
+                        "    remainingLimits:",
+                        "        enabled: true",
+                        "    locale:",
+                        "        enabled: true",
+                        "    lock:",
+                        "        enabled: true",
+                        "    notifications:",
+                        "        enabled: true",
+                        "    imageService:",
+                        "        enabled: true",
+                        "        listImagesServiceClient: 'service_client.service.shared.image.list_images'",
+                        "        throttleBatchNumber: '%maxImageEntities%'",
+                        "        imageRetriever: 'Chiliz\\ServiceClientsBundle\\ImageService\\ListImagesServiceClient'",
+                        "    transformRequest:",
+                        "        enabled: true",
+                        "    userCredential:",
+                        "        enabled: true",
+                        "        retriever: Chiliz\\ServiceClientsBundle\\Services\\Shared\\User\\Credentials\\RetrieveUserCredentialContext",
+                        "    userLocation:",
+                        "        enabled: true",
+                        "    timestampListener:",
+                        "        enabled: true",
+                        "    sentry:",
+                        "        enabled: true",
+                        "        sensitiveKeys: []",
+                        "    sns:",
+                        "        enabled: false",
+                        "    sqs:",
+                        "        enabled: true",
+                        "    daemonLifecycle:",
+                        "        enabled: true",
+                        "        projectRootDir: '%kernel.project_dir%'",
+                        "    monitoringController:",
+                        "        enabled: true",
+                        "    clientIp:",
+                        "        enabled: true",
+                        "    slaveRepository:",
+                        "        enabled: true",
+                        "    client:",
+                        "        enabled: true",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "62162c33a64b7412690f0dd6b26565a614bcc133"
+        }
+    }
+}

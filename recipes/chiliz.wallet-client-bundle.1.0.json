@@ -1,0 +1,33 @@
+{
+    "manifests": {
+        "chiliz/wallet-client-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Chiliz\\WalletClientBundle\\WalletClientBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/packages/chiliz_wallet_client.yaml": "config/packages/chiliz_wallet_client.yaml"
+                },
+                "post-install-output": [
+                    "Congratulations, you've installed chiliz/wallet-client-bundle.",
+                    "",
+                    "Now you need to go to config/packages/chiliz_wallet_client.yaml and update the configuration.",
+                    ""
+                ]
+            },
+            "files": {
+                "config/packages/chiliz_wallet_client.yaml": {
+                    "contents": [
+                        "wallet_client_bundle:",
+                        "    transaction_batch_consumer_name: '%service_name%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "5eb1ed7c1c8bbb6af23c714906461f1f0c09bf4f"
+        }
+    }
+}

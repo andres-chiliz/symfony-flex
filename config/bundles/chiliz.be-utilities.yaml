@@ -1,0 +1,10 @@
+chiliz/be-utilities:
+  v1.0:
+    bundles:
+      Chiliz\Utilities\Bundle\ChilizUtilitiesBundle: ['all']
+    copyFromRecipe:
+      - config/packages/chiliz_utilities.yaml
+    envs:
+      REDIS_CLUSTER_DSN: ''
+      SALT_KEY: ''
+      ENCRYPTION_KEY: ''
