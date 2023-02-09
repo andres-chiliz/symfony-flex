@@ -1,0 +1,2 @@
+wallet_client_bundle:
+    transaction_batch_consumer_name: '%service_name%'

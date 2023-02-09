@@ -1,0 +1,6 @@
+chiliz/wallet-client-bundle:
+  v1.0:
+    bundles:
+      Chiliz\WalletClientBundle\WalletClientBundle: ['all']
+    copyFromRecipe:
+      - config/packages/chiliz_wallet_client.yaml

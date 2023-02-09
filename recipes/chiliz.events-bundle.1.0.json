@@ -1,0 +1,43 @@
+{
+    "manifests": {
+        "chiliz/events-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Chiliz\\EventsBundle\\ChilizEventBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/packages/chiliz_events.yaml": "config/packages/chiliz_events.yaml"
+                },
+                "post-install-output": [
+                    "Congratulations, you've installed chiliz/events-bundle.",
+                    "",
+                    "Now you need to go to config/packages/chiliz_events.yaml and update the configuration.",
+                    ""
+                ]
+            },
+            "files": {
+                "config/packages/chiliz_events.yaml": {
+                    "contents": [
+                        "chiliz_event_bundle:",
+                        "    project_name: '%service_name%'",
+                        "    genericEvents:",
+                        "        producer:",
+                        "            snsTopicName: '%env(AWS_SNS_TOPIC_GENERIC_EVENTS)%'",
+                        "    broadcastEvents:",
+                        "        producer:",
+                        "            snsTopicName: '%env(AWS_SNS_TOPIC_BROADCAST_EVENTS)%'",
+                        "        consumer:",
+                        "            sqsContext: '<your context>'",
+                        "            sqsQueueName: '%env(AWS_SQS_QUEUE_BROADCAST_EVENTS)%'",
+                        "            messageHandlers: []",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "b23e9145293fd486b6ef0625031a57c57c743ce6"
+        }
+    }
+}

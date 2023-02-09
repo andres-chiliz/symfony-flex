@@ -2,13 +2,18 @@
     "manifests": {
         "chiliz/change-tracking-bundle": {
             "manifest": {
+                "bundles": {
+                    "Chiliz\\ChangeTrackingBundle\\ChilizChangeTrackingBundle": [
+                        "all"
+                    ]
+                },
                 "copy-from-recipe": {
                     "config/packages/chiliz_change_tracking.yaml": "config/packages/chiliz_change_tracking.yaml"
                 },
                 "post-install-output": [
                     "Congratulations, you've installed chiliz/change-tracking-bundle.",
                     "",
-                    "Now you need to go to config/packages/chiliz_change_tracking.yaml and change the serviceName value.",
+                    "Now you need to go to config/packages/chiliz_change_tracking.yaml and update the configuration.",
                     ""
                 ]
             },
@@ -18,7 +23,7 @@
                         "chiliz_change_tracking_bundle:",
                         "    connections:",
                         "        default:",
-                        "            serviceName: ChangeMe!",
+                        "            serviceName: '%service_name%'",
                         "    export:",
                         "        awsS3:",
                         "            key:    '%env(AWS_IAM_KEY)%'",
@@ -30,7 +35,7 @@
                     "executable": false
                 }
             },
-            "ref": "c71e3ee3bd7d5d7df2e30e3de175996b2022f5a9"
+            "ref": "6475e1269cd05ad231f59311d76d7ad22834f343"
         }
     }
 }

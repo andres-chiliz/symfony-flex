@@ -1,0 +1,5 @@
+chiliz_translation_bundle:
+    service_name: '%service_name%'
+    redis: 'RedisCluster'
+    upload_lock_ttl: 30
+    translateMessage: false

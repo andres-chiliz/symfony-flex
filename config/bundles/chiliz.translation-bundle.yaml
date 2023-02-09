@@ -1,0 +1,6 @@
+chiliz/translation-bundle:
+  v1.0:
+    bundles:
+      Chiliz\TranslationBundle\ChilizTranslationBundle: ['all']
+    copyFromRecipe:
+      - config/packages/chiliz_translation.yaml

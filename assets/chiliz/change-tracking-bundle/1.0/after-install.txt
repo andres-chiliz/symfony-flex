@@ -1,3 +1,3 @@
 Congratulations, you've installed chiliz/change-tracking-bundle.
 
-Now you need to go to config/packages/chiliz_change_tracking.yaml and change the serviceName value.
+Now you need to go to config/packages/chiliz_change_tracking.yaml and update the configuration.

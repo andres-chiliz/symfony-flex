@@ -1,0 +1,12 @@
+chiliz_event_bundle:
+    project_name: '%service_name%'
+    genericEvents:
+        producer:
+            snsTopicName: '%env(AWS_SNS_TOPIC_GENERIC_EVENTS)%'
+    broadcastEvents:
+        producer:
+            snsTopicName: '%env(AWS_SNS_TOPIC_BROADCAST_EVENTS)%'
+        consumer:
+            sqsContext: '<your context>'
+            sqsQueueName: '%env(AWS_SQS_QUEUE_BROADCAST_EVENTS)%'
+            messageHandlers: []

@@ -1,0 +1,6 @@
+chiliz/currency-bundle:
+  v1.0:
+    bundles:
+      Chiliz\CurrencyBundle\CurrencyBundle: ['all']
+    copyFromRecipe:
+      - config/packages/chiliz_currency.yaml
