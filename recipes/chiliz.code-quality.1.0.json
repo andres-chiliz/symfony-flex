@@ -375,10 +375,12 @@
                         "",
                         "declare(strict_types=1);",
                         "",
-                        "$classesToSkip = [];",
+                        "$classesToSkip = [",
+                        "    '/Rector\\/[a-zA-Z]*\\/src\\/[a-zA-Z]*\\.php/',",
+                        "];",
                         "if (file_exists('phpcs-local-config.php')) {",
                         "    include_once 'phpcs-local-config.php';",
-                        "    $classesToSkip = getClassesToSkip();",
+                        "    $classesToSkip = [...getClassesToSkip(), ...$classesToSkip];",
                         "}",
                         "// https://cs.symfony.com/doc/rules/index.html",
                         "",
@@ -386,7 +388,7 @@
                         "    ->in([",
                         "        'src',",
                         "        'tests',",
-                        "    ])->notPath($classesToSkip);",
+                        "    ])->notPath($classesToSkip)",
                         ";",
                         "",
                         "return (new PhpCsFixer\\Config())",
@@ -401,6 +403,31 @@
                         "        'phpdoc_summary' => false,",
                         "        'phpdoc_annotation_without_dot' => false,",
                         "        'phpdoc_order' => true,",
+                        "        'phpdoc_separation' => [",
+                        "            'groups' => [",
+                        "                ['deprecated', 'link', 'see', 'since'],",
+                        "                ['author', 'copyright', 'license'],",
+                        "                ['category', 'package', 'subpackage'],",
+                        "                ['property', 'property-read', 'property-write'],",
+                        "                ['var'],",
+                        "                ['param'],",
+                        "                ['return'],",
+                        "                ['throws'],",
+                        "                ['ORM\\\\*'],",
+                        "                ['Assert\\\\*'],",
+                        "                ['Serializer\\\\*'],",
+                        "                ['Security'],",
+                        "                ['SuppressWarnings'],",
+                        "                ['OA\\\\*'],",
+                        "                ['FOSRest\\\\*'],",
+                        "                ['ParamConverter\\\\*'],",
+                        "                ['QueryParam\\\\*'],",
+                        "                ['RouteParam\\\\*'],",
+                        "                ['Rest\\\\*'],",
+                        "                ['Permission'],",
+                        "            ],",
+                        "            'skip_unlisted_annotations' => true,",
+                        "        ],",
                         "        'psr_autoloading' => false,",
                         "        'single_line_throw' => false,",
                         "        'simplified_null_return' => false,",
@@ -423,6 +450,7 @@
                         "        ],",
                         "    ])",
                         ";",
+                        "",
                         ""
                     ],
                     "executable": false
@@ -561,7 +589,7 @@
                     "executable": false
                 }
             },
-            "ref": "ed14f515693f756d27ce7ea33790fd2ae496c583"
+            "ref": "e302273a08b6ad9b30a0bc75e9280d924304aa9b"
         }
     }
 }

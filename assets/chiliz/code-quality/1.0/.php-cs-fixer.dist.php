@@ -2,10 +2,12 @@
 
 declare(strict_types=1);
 
-$classesToSkip = [];
+$classesToSkip = [
+    '/Rector\/[a-zA-Z]*\/src\/[a-zA-Z]*\.php/',
+];
 if (file_exists('phpcs-local-config.php')) {
     include_once 'phpcs-local-config.php';
-    $classesToSkip = getClassesToSkip();
+    $classesToSkip = [...getClassesToSkip(), ...$classesToSkip];
 }
 // https://cs.symfony.com/doc/rules/index.html
 
@@ -13,7 +15,7 @@ $finder = PhpCsFixer\Finder::create()
     ->in([
         'src',
         'tests',
-    ])->notPath($classesToSkip);
+    ])->notPath($classesToSkip)
 ;
 
 return (new PhpCsFixer\Config())
@@ -28,6 +30,31 @@ return (new PhpCsFixer\Config())
         'phpdoc_summary' => false,
         'phpdoc_annotation_without_dot' => false,
         'phpdoc_order' => true,
+        'phpdoc_separation' => [
+            'groups' => [
+                ['deprecated', 'link', 'see', 'since'],
+                ['author', 'copyright', 'license'],
+                ['category', 'package', 'subpackage'],
+                ['property', 'property-read', 'property-write'],
+                ['var'],
+                ['param'],
+                ['return'],
+                ['throws'],
+                ['ORM\\*'],
+                ['Assert\\*'],
+                ['Serializer\\*'],
+                ['Security'],
+                ['SuppressWarnings'],
+                ['OA\\*'],
+                ['FOSRest\\*'],
+                ['ParamConverter\\*'],
+                ['QueryParam\\*'],
+                ['RouteParam\\*'],
+                ['Rest\\*'],
+                ['Permission'],
+            ],
+            'skip_unlisted_annotations' => true,
+        ],
         'psr_autoloading' => false,
         'single_line_throw' => false,
         'simplified_null_return' => false,
@@ -50,3 +77,4 @@ return (new PhpCsFixer\Config())
         ],
     ])
 ;
+
