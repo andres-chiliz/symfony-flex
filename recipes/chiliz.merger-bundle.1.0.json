@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "chiliz/merger-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Chiliz\\MergerBundle\\ChilizMergerBundle": [
+                        "all"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "ace775dde7918a6e1174c1c27acf53830a599ab0"
+        }
+    }
+}

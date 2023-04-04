@@ -3,6 +3,9 @@
         "chiliz/wallet-client-bundle": [
             "1.0"
         ],
+        "chiliz/merger-bundle": [
+            "1.0"
+        ],
         "chiliz/events-bundle": [
             "1.0"
         ],

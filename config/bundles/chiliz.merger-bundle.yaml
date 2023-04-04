@@ -1,0 +1,4 @@
+chiliz/merger-bundle:
+  v1.0:
+    bundles:
+      Chiliz\MergerBundle\ChilizMergerBundle: ['all']
