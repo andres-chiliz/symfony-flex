@@ -114,6 +114,7 @@ class GenerateCommand extends Command
         );
         $this->handleMakefile($versionConfig, $newContent['manifests'][$bundleName]['manifest']);
         $this->handlePostInstallOutput($bundleName, $version, $newContent['manifests'][$bundleName]['manifest']);
+        $this->handleComposerScripts($versionConfig, $newContent['manifests'][$bundleName]['manifest']);
 
         if ($this->fs->exists($filename)) {
             $oldContent = json_decode(file_get_contents($filename), true);
@@ -185,6 +186,15 @@ class GenerateCommand extends Command
         }
 
         $manifest['post-install-output'] = explode(PHP_EOL, file_get_contents($filename));
+    }
+
+    private function handleComposerScripts(?array $versionConfig, array &$manifest)
+    {
+        if (!isset($versionConfig['composerScripts']) || $versionConfig['composerScripts'] === []) {
+            return;
+        }
+
+        $manifest['composer-scripts'] = $versionConfig['composerScripts'];
     }
 
 }

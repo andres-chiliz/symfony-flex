@@ -1,0 +1,4 @@
+chiliz/git-commit-composer:
+  v1.0:
+    composerCommands:
+      "[ $COMPOSER_DEV_MODE -eq 0 ] || php ./vendor/chiliz/git-commit-composer/install.php" : "script"

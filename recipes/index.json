@@ -24,8 +24,12 @@
         "chiliz/change-tracking-bundle": [
             "1.0"
         ],
-        "chiliz/code-quality": [
+        "chiliz/git-commit-composer": [
             "1.0"
+        ],
+        "chiliz/code-quality": [
+            "1.0",
+            "1.4"
         ]
     },
     "branch": "dev",

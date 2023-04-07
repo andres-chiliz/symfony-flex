@@ -42,6 +42,7 @@ The configuration file is simple :
     envs: [] # The list of environment variables to be defined
     gitignore: [] # The list of ignored files for this bundle
     makefile: [] # lines to add to the project makefile
+    composerScripts: [] # lines to add to the scripts/auto-script section of composer.json
 ```
 
 Last but not least, if in your bundle asset directory you've created a `after-install.txt` file, this will be automatically parsed and displayed after installing the recipe.

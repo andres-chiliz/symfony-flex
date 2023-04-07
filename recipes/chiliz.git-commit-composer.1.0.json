@@ -1,0 +1,9 @@
+{
+    "manifests": {
+        "chiliz/git-commit-composer": {
+            "manifest": [],
+            "files": [],
+            "ref": "63b9193e6e0a3f7badb3ffead329dacbfac14056"
+        }
+    }
+}
