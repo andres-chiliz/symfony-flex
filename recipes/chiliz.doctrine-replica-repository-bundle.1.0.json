@@ -1,0 +1,22 @@
+{
+    "manifests": {
+        "chiliz/doctrine-replica-repository-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Chiliz\\DoctrineReplicaRepositoryBundle\\ChilizDoctrineReplicaRepositoryBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": [],
+                "post-install-output": [
+                    "Congratulations, you've installed chiliz/doctrine-replica-repository-bundle.",
+                    "",
+                    "Now you need to go to config/packages/chiliz_currency.yaml and update the configuration.",
+                    ""
+                ]
+            },
+            "files": [],
+            "ref": "e06316876f8dbaa08de4af110c68eb6b3765a89f"
+        }
+    }
+}
