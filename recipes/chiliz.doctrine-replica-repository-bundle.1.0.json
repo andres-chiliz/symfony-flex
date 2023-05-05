@@ -7,7 +7,9 @@
                         "all"
                     ]
                 },
-                "copy-from-recipe": [],
+                "copy-from-recipe": {
+                    "config/packages/chiliz_doctrine_replica_repository.yaml": "config/packages/chiliz_doctrine_replica_repository.yaml"
+                },
                 "post-install-output": [
                     "Congratulations, you've installed chiliz/doctrine-replica-repository-bundle.",
                     "",
@@ -15,8 +17,19 @@
                     ""
                 ]
             },
-            "files": [],
-            "ref": "8ac8bf0c01319f9f93d4b5f2ad5a56e8d48fdc12"
+            "files": {
+                "config/packages/chiliz_doctrine_replica_repository.yaml": {
+                    "contents": [
+                        "chiliz_doctrine_replica_repository:",
+                        "  connections:",
+                        "    <connection_name>:",
+                        "      replica: '%env(resolve:SLAVE_DATABASE_URL)%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "353c3040705332d81b2dade35ed1d7697dc575c5"
         }
     }
 }
