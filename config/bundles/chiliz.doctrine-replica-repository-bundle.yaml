@@ -3,4 +3,4 @@ chiliz/doctrine-replica-repository-bundle:
     bundles:
       Chiliz\DoctrineReplicaRepositoryBundle\ChilizDoctrineReplicaRepositoryBundle: ['all']
     copyFromRecipe:
-      - config/packages/chiliz_change_tracking.yaml
+      - config/packages/chiliz_doctrine_replica_repository.yaml
