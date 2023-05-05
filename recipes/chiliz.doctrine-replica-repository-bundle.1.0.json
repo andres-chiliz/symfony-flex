@@ -11,12 +11,12 @@
                 "post-install-output": [
                     "Congratulations, you've installed chiliz/doctrine-replica-repository-bundle.",
                     "",
-                    "Now you need to go to config/packages/chiliz_currency.yaml and update the configuration.",
+                    "Now you need to go to config/packages/chiliz_doctrine_replica_repository.yaml and update the configuration.",
                     ""
                 ]
             },
             "files": [],
-            "ref": "e06316876f8dbaa08de4af110c68eb6b3765a89f"
+            "ref": "8ac8bf0c01319f9f93d4b5f2ad5a56e8d48fdc12"
         }
     }
 }

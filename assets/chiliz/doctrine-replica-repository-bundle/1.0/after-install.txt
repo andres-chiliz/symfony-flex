@@ -1,3 +1,3 @@
 Congratulations, you've installed chiliz/doctrine-replica-repository-bundle.
 
-Now you need to go to config/packages/chiliz_currency.yaml and update the configuration.
+Now you need to go to config/packages/chiliz_doctrine_replica_repository.yaml and update the configuration.
