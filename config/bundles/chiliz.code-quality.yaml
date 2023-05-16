@@ -27,3 +27,19 @@ chiliz/code-quality:
       - "-include vendor/chiliz/code-quality/make/code_quality.mk"
     composerCommands:
         "[ $COMPOSER_DEV_MODE -eq 0 ] ||  (mkdir -p .gitlab/merge_request_templates && cp vendor/chiliz/code-quality/.gitlab/merge_request_templates/Default.md .gitlab/merge_request_templates)": "script"
+  v2.0:
+    gitignore:
+      - .php-cs-fixer.cache
+      - .phpcs-cache
+    copyFromRecipe:
+      - .editorconfig
+      - .php-cs-fixer.dist.php
+      - phpcs.xml.dist
+      - phpmd.xml
+      - phpstan.neon
+      - rector.php
+      - gherkinlint.json
+    makefile:
+      - "-include vendor/chiliz/code-quality/make/code_quality.mk"
+    composerCommands:
+      "[ $COMPOSER_DEV_MODE -eq 0 ] ||  (mkdir -p .gitlab/merge_request_templates && cp vendor/chiliz/code-quality/.gitlab/merge_request_templates/Default.md .gitlab/merge_request_templates)": "script"
