@@ -1,0 +1,19 @@
+chiliz_configuration:
+  service_name: '%service_name%'
+  service_clients:
+    api_proxy_client: '' # name of the chiliz_service_clients_bundle.api_proxy_clients to use
+
+  cache:
+    ttl: 300 # ttl for cache of configuration-service values (default to 300)
+
+  configurations:
+    "<your-configuration-code>": # The key here will be the code of the configuration in configuration-service (the key to get it)
+      description: "" # Put a description in here to explain in backoffice what this configuration is used for
+      type: "" # The type of values for this configuration (text, boolean, integer, json, date, datetime or url)
+      defaultValue: "" # The default value of the configuration (fallback if it does not exist on configuration-service or if configuration-service is down)
+      # Define what scopes should be associated with this configuration.
+      # Three values possible:
+      # * "yes": will add both current %service_name% and frontend scopes;
+      # * "no": default value, will add current %service_name% but not frontend scope;
+      # * "only": will only add frontend scope, meaning it will not be usable by this backend-service;
+      frontend: "no"

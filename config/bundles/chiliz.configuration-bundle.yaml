@@ -1,0 +1,6 @@
+chiliz/configuration-bundle:
+  v1.0:
+    bundles:
+      Chiliz\ConfigurationBundle\ChilizConfigurationBundle: ['all']
+    copyFromRecipe:
+      - config/packages/chiliz_configuration.yaml
