@@ -1,6 +1,7 @@
 app.build.dev:
 	make app.set_file_permissions.dev
 	docker-compose -f docker-compose.yml up --build -d
+	docker-compose exec php composer install
 
 app.docker.sh:
 	docker-compose exec php /bin/sh
