@@ -1,0 +1,24 @@
+includes:
+    - 'vendor/phpstan/phpstan-doctrine/extension.neon'
+    - 'vendor/phpstan/phpstan-doctrine/rules.neon'
+    - 'vendor/phpstan/phpstan-strict-rules/rules.neon'
+    - 'vendor/phpstan/phpstan-symfony/extension.neon'
+    - 'vendor/phpstan/phpstan-symfony/rules.neon'
+
+parameters:
+    level: 8
+    paths:
+        - src
+    bootstrapFiles:
+        - vendor/autoload.php
+    excludePaths:
+    checkMissingIterableValueType: false
+    inferPrivatePropertyTypeFromConstructor: true
+    checkGenericClassInNonGenericObjectType: false
+    reportMaybesInPropertyPhpDocTypes: false
+    ignoreErrors:
+services:
+    -
+        class: Ergebnis\PHPStan\Rules\Files\DeclareStrictTypesRule
+        tags:
+            - phpstan.rules.rule
