@@ -1,0 +1,15 @@
+{
+    "manifests": {
+        "chiliz/test-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Chiliz\\TestBundle\\ChilizTestBundle": [
+                        "test"
+                    ]
+                }
+            },
+            "files": [],
+            "ref": "6526a25ac8e281f454344f09267c92cd2dd73a81"
+        }
+    }
+}

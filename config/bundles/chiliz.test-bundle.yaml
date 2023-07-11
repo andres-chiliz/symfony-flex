@@ -1,0 +1,4 @@
+chiliz/test-bundle:
+  v1.0:
+    bundles:
+      Chiliz\TestBundle\ChilizTestBundle: ['test']
