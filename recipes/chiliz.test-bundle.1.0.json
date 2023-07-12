@@ -6,10 +6,13 @@
                     "Chiliz\\TestBundle\\ChilizTestBundle": [
                         "test"
                     ]
-                }
+                },
+                "makefile": [
+                    "-include vendor/chiliz/test-bundle/make/tests.mk"
+                ]
             },
             "files": [],
-            "ref": "6526a25ac8e281f454344f09267c92cd2dd73a81"
+            "ref": "84d6e2686e1c176fc84c1781b2c9ea7990155cbf"
         }
     }
 }
