@@ -2,3 +2,5 @@ chiliz/test-bundle:
   v1.0:
     bundles:
       Chiliz\TestBundle\ChilizTestBundle: ['test']
+    makefile:
+      - "-include vendor/chiliz/test-bundle/make/tests.mk"
