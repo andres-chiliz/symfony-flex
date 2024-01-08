@@ -1,0 +1,27 @@
+{
+    "manifests": {
+        "chiliz/gitlab-api-client-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Chiliz\\GitlabApiBundle\\GitlabApiBundle.php": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/packages/chiliz_gitlab_api.yaml": "config/packages/chiliz_gitlab_api.yaml"
+                }
+            },
+            "files": {
+                "config/packages/chiliz_gitlab_api.yaml": {
+                    "contents": [
+                        "chiliz_gitlab_api:",
+                        "  api_url: '%env(GITLAB_API_BASE_URL)%'",
+                        "  api_token: '%env(GITLAB_API_TOKEN)%'"
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "7f2e87c265da302f27e5cf210b759d7d66d7843d"
+        }
+    }
+}
