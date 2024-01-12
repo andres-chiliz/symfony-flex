@@ -1,3 +1,0 @@
-chiliz_gitlab_api:
-  api_url: '%env(GITLAB_API_BASE_URL)%'
-  api_token: '%env(GITLAB_API_TOKEN)%'
