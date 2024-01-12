@@ -1,0 +1,29 @@
+{
+    "manifests": {
+        "chiliz/jira-api-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Chiliz\\JiraApiBundle\\JiraApiBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/packages/chiliz_jira_api.yaml": "config/packages/chiliz_jira_api.yaml"
+                }
+            },
+            "files": {
+                "config/packages/chiliz_jira_api.yaml": {
+                    "contents": [
+                        "chiliz_jira_api:",
+                        "  user_email: '%env(JIRA_USER_EMAIL)%'",
+                        "  api_token: '%env(JIRA_USER_TOKEN)%'",
+                        "  api_url: '%env(JIRA_BASE_URL)%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "b97103549303eece4ee9db9014e21db50fc93898"
+        }
+    }
+}

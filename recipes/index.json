@@ -1,6 +1,36 @@
 {
     "recipes": {
+        "chiliz/events-bundle": [
+            "1.0"
+        ],
+        "chiliz/configuration-bundle": [
+            "1.0"
+        ],
+        "chiliz/doctrine-replica-repository-bundle": [
+            "1.0"
+        ],
+        "chiliz/test-bundle": [
+            "1.0"
+        ],
+        "chiliz/git-commit-composer": [
+            "1.0"
+        ],
+        "chiliz/gitlab-api-client-bundle": [
+            "0.0.1"
+        ],
+        "chiliz/wallet-client-bundle": [
+            "1.0"
+        ],
+        "chiliz/jira-api-bundle": [
+            "0.0.1"
+        ],
+        "chiliz/currency-bundle": [
+            "1.0"
+        ],
         "chiliz/service-clients-bundle": [
+            "1.0"
+        ],
+        "chiliz/be-utilities": [
             "1.0"
         ],
         "chiliz/code-quality": [
@@ -10,37 +40,13 @@
             "2.1",
             "2.9"
         ],
-        "chiliz/be-utilities": [
-            "1.0"
-        ],
-        "chiliz/translation-bundle": [
+        "chiliz/merger-bundle": [
             "1.0"
         ],
         "chiliz/change-tracking-bundle": [
             "1.0"
         ],
-        "chiliz/doctrine-replica-repository-bundle": [
-            "1.0"
-        ],
-        "chiliz/configuration-bundle": [
-            "1.0"
-        ],
-        "chiliz/events-bundle": [
-            "1.0"
-        ],
-        "chiliz/git-commit-composer": [
-            "1.0"
-        ],
-        "chiliz/wallet-client-bundle": [
-            "1.0"
-        ],
-        "chiliz/merger-bundle": [
-            "1.0"
-        ],
-        "chiliz/currency-bundle": [
-            "1.0"
-        ],
-        "chiliz/test-bundle": [
+        "chiliz/translation-bundle": [
             "1.0"
         ]
     },
