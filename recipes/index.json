@@ -21,9 +21,6 @@
         "chiliz/wallet-client-bundle": [
             "1.0"
         ],
-        "chiliz/jira-api-bundle": [
-            "0.0.1"
-        ],
         "chiliz/currency-bundle": [
             "1.0"
         ],
@@ -39,6 +36,9 @@
             "2.0",
             "2.1",
             "2.9"
+        ],
+        "chiliz/jira-api-client-bundle": [
+            "0.0.1"
         ],
         "chiliz/merger-bundle": [
             "1.0"

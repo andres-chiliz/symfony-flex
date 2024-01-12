@@ -1,6 +1,6 @@
 {
     "manifests": {
-        "chiliz/jira-api-bundle": {
+        "chiliz/jira-api-client-bundle": {
             "manifest": {
                 "bundles": {
                     "Chiliz\\JiraApiBundle\\JiraApiBundle": [
@@ -23,7 +23,7 @@
                     "executable": false
                 }
             },
-            "ref": "b97103549303eece4ee9db9014e21db50fc93898"
+            "ref": "99ea12c80dc0d3da47aa6a05ec5755c6cbe640e4"
         }
     }
 }
