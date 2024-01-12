@@ -1,0 +1,9 @@
+chiliz/gitlab-api-client-bundle:
+  v0.0.1:
+    bundles:
+      Chiliz\GitlabApiBundle\GitlabApiBundle.php: ['all']
+    copyFromRecipe:
+      - config/packages/chiliz_gitlab_api.yaml
+    envs:
+      GITLAB_API_BASE_URL: ''
+      GITLAB_API_TOKEN: ''

@@ -1,0 +1,4 @@
+chiliz_jira_api:
+  user_email: '%env(JIRA_USER_EMAIL)%'
+  api_token: '%env(JIRA_USER_TOKEN)%'
+  api_url: '%env(JIRA_BASE_URL)%'
