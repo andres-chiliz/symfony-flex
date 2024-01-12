@@ -16,7 +16,7 @@
             "1.0"
         ],
         "chiliz/gitlab-api-client-bundle": [
-            "0.0.1"
+            "1.0"
         ],
         "chiliz/wallet-client-bundle": [
             "1.0"
@@ -35,10 +35,11 @@
             "1.4",
             "2.0",
             "2.1",
-            "2.9"
+            "2.9",
+            "2.11"
         ],
         "chiliz/jira-api-client-bundle": [
-            "0.0.1"
+            "1.0"
         ],
         "chiliz/merger-bundle": [
             "1.0"

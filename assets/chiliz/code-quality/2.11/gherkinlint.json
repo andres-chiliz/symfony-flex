@@ -1,0 +1,74 @@
+{
+  "rules": {
+    "filename" : {
+      "enabled" : true,
+      "style": "snake_case"
+    },
+    "no-background-with-single-scenario" : {
+      "enabled" : true
+    },
+    "no-consecutive-empty-lines" : {
+      "enabled" : true
+    },
+    "no-duplicate-tags" : {
+      "enabled" : true
+    },
+    "no-empty-background" : {
+      "enabled" : true
+    },
+    "no-empty-scenarios" : {
+      "enabled" : true
+    },
+    "no-superflous-tags" : {
+      "enabled" : true
+    },
+    "no-restricted-patterns" : {
+      "enabled" : true,
+      "patterns": [
+      ]
+    },
+    "scenario-size" : {
+      "enabled" : false
+    },
+    "no-duplicated-scenario-names": {
+      "enabled": false
+    },
+    "no-duplicated-feature-names": {
+      "enabled": false
+    },
+    "no-homogenous-tags": {
+      "enabled": false
+    },
+    "no-unnamed-features": {
+      "enabled": false
+    },
+    "keyword-order": {
+      "enabled": true,
+      "tolerateThenBeforeWhen": false
+    },
+    "scenarios-per-file": {
+      "enabled": false,
+      "min": 1,
+      "max": 20
+    },
+    "no-homogenous-spaces" : {
+      "enabled" : true
+    },
+    "allowed-tags": {
+      "enabled": true
+    },
+    "indentation": {
+      "enabled": true,
+      "width": 4,
+      "feature": 0,
+      "rule": 1,
+      "backgroud": 1,
+      "scenario": 1,
+      "step": 2,
+      "table": 3,
+      "literalBlock": 2,
+      "examples": 2,
+      "examplesTable": 3
+    }
+  }
+}

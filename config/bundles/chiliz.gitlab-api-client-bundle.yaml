@@ -1,7 +1,7 @@
 chiliz/gitlab-api-client-bundle:
-  v0.0.1:
+  v1.0:
     bundles:
-      Chiliz\GitlabApiBundle\GitlabApiBundle.php: ['all']
+      Chiliz\GitlabApiBundle\GitlabApiBundle: ['all']
     copyFromRecipe:
       - config/packages/chiliz_gitlab_api.yaml
     envs:

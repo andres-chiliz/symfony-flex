@@ -3,7 +3,7 @@
         "chiliz/gitlab-api-client-bundle": {
             "manifest": {
                 "bundles": {
-                    "Chiliz\\GitlabApiBundle\\GitlabApiBundle.php": [
+                    "Chiliz\\GitlabApiBundle\\GitlabApiBundle": [
                         "all"
                     ]
                 },
@@ -21,7 +21,7 @@
                     "executable": false
                 }
             },
-            "ref": "666a10ccd7cd045b316a6cfe190efbdde8549921"
+            "ref": "67b4da4bab51d7e8c20474dc3fed42c276d58416"
         }
     }
 }
