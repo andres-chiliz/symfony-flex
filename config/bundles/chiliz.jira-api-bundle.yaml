@@ -1,0 +1,10 @@
+chiliz/jira-api-bundle:
+  v0.1:
+    bundles:
+      Chiliz\JiraApiBundle\JiraApiBundle: ['all']
+    copyFromRecipe:
+      - config/packages/chiliz_jira_api.yaml
+    envs:
+      JIRA_BASE_URL: ''
+      JIRA_USER_EMAIL: ''
+      JIRA_USER_TOKEN: ''
