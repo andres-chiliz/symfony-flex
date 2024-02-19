@@ -1,0 +1,4 @@
+chiliz_observability:
+    sentry:
+        dsn: '%env(SENTRY_DSN)%'
+        release: '%env(RELEASE_TAG)%'

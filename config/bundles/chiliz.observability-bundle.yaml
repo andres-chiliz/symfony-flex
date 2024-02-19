@@ -1,0 +1,9 @@
+chiliz/observability-bundle:
+  v1.0:
+    bundles:
+      Chiliz\ObservabilityBundle\ChilizObservabilityBundle: ['all']
+    copyFromRecipe:
+      - config/packages/chiliz_observability_bundle.yaml
+    envs:
+      SENTRY_DSN: ''
+      RELEASE_TAG: ''
