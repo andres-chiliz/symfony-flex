@@ -41,6 +41,9 @@
         "chiliz/jira-api-client-bundle": [
             "1.0"
         ],
+        "chiliz/observability-bundle": [
+            "1.0"
+        ],
         "chiliz/merger-bundle": [
             "1.0"
         ],

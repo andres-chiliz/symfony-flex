@@ -1,0 +1,28 @@
+{
+    "manifests": {
+        "chiliz/observability-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Chiliz\\ObservabilityBundle\\ChilizObservabilityBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/packages/chiliz_observability_bundle.yaml": "config/packages/chiliz_observability_bundle.yaml"
+                }
+            },
+            "files": {
+                "config/packages/chiliz_observability_bundle.yaml": {
+                    "contents": [
+                        "chiliz_observability:",
+                        "    sentry:",
+                        "        dsn: '%env(SENTRY_DSN)%'",
+                        "        release: '%env(RELEASE_TAG)%'"
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "241c0f997c50ab5f55686074396591dbebf4d4fd"
+        }
+    }
+}
