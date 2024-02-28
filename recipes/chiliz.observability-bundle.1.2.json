@@ -1,0 +1,47 @@
+{
+    "manifests": {
+        "chiliz/observability-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Symfony\\Bundle\\MonologBundle\\MonologBundle": [
+                        "all"
+                    ],
+                    "Sentry\\SentryBundle\\SentryBundle::class": [
+                        "dev",
+                        "prod"
+                    ],
+                    "Chiliz\\ObservabilityBundle\\ChilizObservabilityBundle": [
+                        "all"
+                    ]
+                },
+                "env": {
+                    "#1": "The Sentry DSN",
+                    "SENTRY_DSN": "",
+                    "#2": "The release tag to be used in Sentry",
+                    "RELEASE_TAG": "",
+                    "#3": "The rate of sample that we are sending to sentry",
+                    "SENTRY_TRACES_SAMPLE_RATE": "0.0",
+                    "#4": "The path monolog is writing logs [PRODUCTION ONLY]",
+                    "LOG_FILE_PATH": ""
+                },
+                "copy-from-recipe": {
+                    "config/packages/chiliz_observability_bundle.yaml": "config/packages/chiliz_observability_bundle.yaml"
+                }
+            },
+            "files": {
+                "config/packages/chiliz_observability_bundle.yaml": {
+                    "contents": [
+                        "chiliz_observability:",
+                        "    sentry:",
+                        "        dsn: '%env(SENTRY_DSN)%'",
+                        "        release: '%env(RELEASE_TAG)%'",
+                        "        traces_sample_rate: '%env(SENTRY_TRACES_SAMPLE_RATE)%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "a5151c10be57d7ffb8eef67c6cb4f87ae353b7ff"
+        }
+    }
+}

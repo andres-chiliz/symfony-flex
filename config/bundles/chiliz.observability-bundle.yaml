@@ -4,6 +4,25 @@ chiliz/observability-bundle:
       Chiliz\ObservabilityBundle\ChilizObservabilityBundle: ['all']
     copyFromRecipe:
       - config/packages/chiliz_observability_bundle.yaml
-    envs:
+    env:
+      '#1': 'The Sentry DSN'
       SENTRY_DSN: ''
+      '#2': 'The release tag to be used in Sentry'
       RELEASE_TAG: ''
+
+  v1.2:
+    bundles:
+      Symfony\Bundle\MonologBundle\MonologBundle: ['all']
+      Sentry\SentryBundle\SentryBundle::class: ['dev', 'prod']
+      Chiliz\ObservabilityBundle\ChilizObservabilityBundle: ['all']
+    copyFromRecipe:
+      - config/packages/chiliz_observability_bundle.yaml
+    envs:
+      '#1': 'The Sentry DSN'
+      SENTRY_DSN: ''
+      '#2': 'The release tag to be used in Sentry'
+      RELEASE_TAG: ''
+      '#3': 'The rate of sample that we are sending to sentry'
+      SENTRY_TRACES_SAMPLE_RATE: '0.0'
+      '#4': 'The path monolog is writing logs [PRODUCTION ONLY]'
+      LOG_FILE_PATH: ''

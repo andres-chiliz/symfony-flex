@@ -7,6 +7,11 @@
                         "all"
                     ]
                 },
+                "env": {
+                    "REDIS_CLUSTER_DSN": "",
+                    "SALT_KEY": "",
+                    "ENCRYPTION_KEY": ""
+                },
                 "copy-from-recipe": {
                     "config/packages/chiliz_utilities.yaml": "config/packages/chiliz_utilities.yaml"
                 },
@@ -96,7 +101,7 @@
                     "executable": false
                 }
             },
-            "ref": "62162c33a64b7412690f0dd6b26565a614bcc133"
+            "ref": "6131558f08036a4143f6f70ffa28b9bce93bc517"
         }
     }
 }

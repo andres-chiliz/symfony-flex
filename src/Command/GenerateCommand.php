@@ -104,6 +104,7 @@ class GenerateCommand extends Command
         ];
 
         $this->handleBundlesActivation($versionConfig, $newContent['manifests'][$bundleName]['manifest']);
+        $this->handleEnvVariables($versionConfig, $newContent['manifests'][$bundleName]['manifest']);
         $this->handleGitignore($versionConfig, $newContent['manifests'][$bundleName]['manifest']);
         $this->handleFiles(
             $bundleName,
@@ -195,6 +196,15 @@ class GenerateCommand extends Command
         }
 
         $manifest['composer-scripts'] = $versionConfig['composerScripts'];
+    }
+
+    private function handleEnvVariables(?array $versionConfig, array &$manifest)
+    {
+        if (!isset($versionConfig['envs']) || $versionConfig['envs'] === []) {
+            return;
+        }
+
+        $manifest['env'] = $versionConfig['envs'];
     }
 
 }
