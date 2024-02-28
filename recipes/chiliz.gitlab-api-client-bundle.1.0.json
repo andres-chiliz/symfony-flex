@@ -7,6 +7,10 @@
                         "all"
                     ]
                 },
+                "env": {
+                    "GITLAB_API_BASE_URL": "",
+                    "GITLAB_API_TOKEN": ""
+                },
                 "copy-from-recipe": {
                     "config/packages/chiliz_gitlab_api.yaml": "config/packages/chiliz_gitlab_api.yaml"
                 }
@@ -21,7 +25,7 @@
                     "executable": false
                 }
             },
-            "ref": "67b4da4bab51d7e8c20474dc3fed42c276d58416"
+            "ref": "a1255e2c15f0c94dbba4f8e7cc1d03c5c77b4fad"
         }
     }
 }

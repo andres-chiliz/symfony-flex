@@ -7,6 +7,16 @@
                         "all"
                     ]
                 },
+                "env": {
+                    "#1": "Endpoint configuration for Chilipay Api Proxy",
+                    "CHILIPAY_API_PROXY_BASE_URL": "",
+                    "CHILIPAY_API_PROXY_CONSUMER_NAME": "",
+                    "CHILIPAY_API_PROXY_CONSUMER_KEY": "",
+                    "#2": "Endpoint configuration for Chiliz Api Proxy",
+                    "CHILIZ_API_PROXY_BASE_URL": "",
+                    "CHILIZ_API_PROXY_CONSUMER_NAME": "",
+                    "CHILIZ_API_PROXY_CONSUMER_KEY": ""
+                },
                 "copy-from-recipe": {
                     "config/packages/chiliz_service_clients.yaml": "config/packages/chiliz_service_clients.yaml",
                     "config/packages/test/chiliz_service_clients.yaml": "config/packages/test/chiliz_service_clients.yaml"
@@ -68,7 +78,7 @@
                     "executable": false
                 }
             },
-            "ref": "e5d644494ee50ba7a95f4867b09fcba4e7815a16"
+            "ref": "7ca2cc719aa157b9a89503885ab7e4faf1d9f8a7"
         }
     }
 }

@@ -7,6 +7,11 @@
                         "all"
                     ]
                 },
+                "env": {
+                    "JIRA_BASE_URL": "",
+                    "JIRA_USER_EMAIL": "",
+                    "JIRA_USER_TOKEN": ""
+                },
                 "copy-from-recipe": {
                     "config/packages/chiliz_jira_api.yaml": "config/packages/chiliz_jira_api.yaml"
                 }
@@ -23,7 +28,7 @@
                     "executable": false
                 }
             },
-            "ref": "59e84da1cb98526d5398c703ee062ad02d8ed67a"
+            "ref": "3cbd216d8c6b2390d74dfdb6eb3a52ee45cf474a"
         }
     }
 }
