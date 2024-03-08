@@ -6,7 +6,7 @@
                     "Symfony\\Bundle\\MonologBundle\\MonologBundle": [
                         "all"
                     ],
-                    "Sentry\\SentryBundle\\SentryBundle::class": [
+                    "Sentry\\SentryBundle\\SentryBundle": [
                         "dev",
                         "prod"
                     ],
@@ -41,7 +41,7 @@
                     "executable": false
                 }
             },
-            "ref": "a5151c10be57d7ffb8eef67c6cb4f87ae353b7ff"
+            "ref": "d0e4d06e4d5d29f9dd24688037696b643dfe6800"
         }
     }
 }
