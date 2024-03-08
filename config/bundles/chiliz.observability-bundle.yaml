@@ -13,7 +13,7 @@ chiliz/observability-bundle:
   v1.2:
     bundles:
       Symfony\Bundle\MonologBundle\MonologBundle: ['all']
-      Sentry\SentryBundle\SentryBundle::class: ['dev', 'prod']
+      Sentry\SentryBundle\SentryBundle: ['dev', 'prod']
       Chiliz\ObservabilityBundle\ChilizObservabilityBundle: ['all']
     copyFromRecipe:
       - config/packages/chiliz_observability_bundle.yaml
