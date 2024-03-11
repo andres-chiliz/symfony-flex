@@ -3,7 +3,7 @@ chiliz/observability-bundle:
     bundles:
       Chiliz\ObservabilityBundle\ChilizObservabilityBundle: ['all']
     copyFromRecipe:
-      - config/packages/chiliz_observability_bundle.yaml
+      - config/packages/chiliz_observability.yaml
     env:
       '#1': 'The Sentry DSN'
       SENTRY_DSN: ''
@@ -16,7 +16,7 @@ chiliz/observability-bundle:
       Sentry\SentryBundle\SentryBundle: ['dev', 'prod']
       Chiliz\ObservabilityBundle\ChilizObservabilityBundle: ['all']
     copyFromRecipe:
-      - config/packages/chiliz_observability_bundle.yaml
+      - config/packages/chiliz_observability.yaml
     envs:
       '#1': 'The Sentry DSN'
       SENTRY_DSN: ''

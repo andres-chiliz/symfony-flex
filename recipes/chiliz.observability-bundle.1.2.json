@@ -25,11 +25,11 @@
                     "LOG_FILE_PATH": ""
                 },
                 "copy-from-recipe": {
-                    "config/packages/chiliz_observability_bundle.yaml": "config/packages/chiliz_observability_bundle.yaml"
+                    "config/packages/chiliz_observability.yaml": "config/packages/chiliz_observability.yaml"
                 }
             },
             "files": {
-                "config/packages/chiliz_observability_bundle.yaml": {
+                "config/packages/chiliz_observability.yaml": {
                     "contents": [
                         "chiliz_observability:",
                         "    sentry:",
@@ -41,7 +41,7 @@
                     "executable": false
                 }
             },
-            "ref": "d0e4d06e4d5d29f9dd24688037696b643dfe6800"
+            "ref": "652be7dffdcee785f77baf28e8d987788e7b5efb"
         }
     }
 }

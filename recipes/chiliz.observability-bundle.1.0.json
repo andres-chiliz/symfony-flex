@@ -8,11 +8,11 @@
                     ]
                 },
                 "copy-from-recipe": {
-                    "config/packages/chiliz_observability_bundle.yaml": "config/packages/chiliz_observability_bundle.yaml"
+                    "config/packages/chiliz_observability.yaml": "config/packages/chiliz_observability.yaml"
                 }
             },
             "files": {
-                "config/packages/chiliz_observability_bundle.yaml": {
+                "config/packages/chiliz_observability.yaml": {
                     "contents": [
                         "chiliz_observability:",
                         "    sentry:",
@@ -22,7 +22,7 @@
                     "executable": false
                 }
             },
-            "ref": "241c0f997c50ab5f55686074396591dbebf4d4fd"
+            "ref": "2fb6addd7f931abbbf149f1cafd7cdd899e59607"
         }
     }
 }
