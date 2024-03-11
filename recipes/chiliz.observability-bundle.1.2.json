@@ -22,7 +22,7 @@
                     "#3": "The rate of sample that we are sending to sentry",
                     "SENTRY_TRACES_SAMPLE_RATE": "0.0",
                     "#4": "The path monolog is writing logs [PRODUCTION ONLY]",
-                    "LOG_FILE_PATH": ""
+                    "LOG_FILE_PATH": "php://stdout"
                 },
                 "copy-from-recipe": {
                     "config/packages/chiliz_observability.yaml": "config/packages/chiliz_observability.yaml"
@@ -41,7 +41,7 @@
                     "executable": false
                 }
             },
-            "ref": "652be7dffdcee785f77baf28e8d987788e7b5efb"
+            "ref": "6ae5d09728bd16be97cd2582e9494d5a4faff93f"
         }
     }
 }

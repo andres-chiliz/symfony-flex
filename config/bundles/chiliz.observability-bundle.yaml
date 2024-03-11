@@ -25,4 +25,4 @@ chiliz/observability-bundle:
       '#3': 'The rate of sample that we are sending to sentry'
       SENTRY_TRACES_SAMPLE_RATE: '0.0'
       '#4': 'The path monolog is writing logs [PRODUCTION ONLY]'
-      LOG_FILE_PATH: ''
+      LOG_FILE_PATH: 'php://stdout'
