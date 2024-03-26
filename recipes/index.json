@@ -42,6 +42,9 @@
         "chiliz/git-commit-composer": [
             "1.0"
         ],
+        "chiliz/doctrine-bundle": [
+            "1.0"
+        ],
         "chiliz/wallet-client-bundle": [
             "1.0"
         ],

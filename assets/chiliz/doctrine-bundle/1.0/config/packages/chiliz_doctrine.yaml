@@ -1,0 +1,4 @@
+chiliz_doctrine:
+  connections:
+    <connection_name>:
+      replica: '%env(resolve:SLAVE_DATABASE_URL)%'

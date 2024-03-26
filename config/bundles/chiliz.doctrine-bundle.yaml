@@ -1,0 +1,6 @@
+chiliz/doctrine-bundle:
+  v1.0:
+    bundles:
+      Chiliz\DoctrineBundle\ChilizDoctrineBundle: ['all']
+    copyFromRecipe:
+      - config/packages/chiliz_doctrine.yaml
