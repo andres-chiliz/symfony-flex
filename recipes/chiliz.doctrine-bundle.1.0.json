@@ -1,0 +1,29 @@
+{
+    "manifests": {
+        "chiliz/doctrine-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Chiliz\\DoctrineBundle\\ChilizDoctrineBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/packages/chiliz_doctrine.yaml": "config/packages/chiliz_doctrine.yaml"
+                }
+            },
+            "files": {
+                "config/packages/chiliz_doctrine.yaml": {
+                    "contents": [
+                        "chiliz_doctrine:",
+                        "  connections:",
+                        "    <connection_name>:",
+                        "      replica: '%env(resolve:SLAVE_DATABASE_URL)%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "fe3d2568ca88cf0a00e75e0c3a196b365c444e80"
+        }
+    }
+}
