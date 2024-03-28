@@ -1,0 +1,6 @@
+when@dev:
+    chiliz_api_first:
+        contract_url: '%env(API_CONTRACT_URL)%'
+when@test:
+    chiliz_api_first:
+        contract_url: '%env(API_CONTRACT_URL)%'
