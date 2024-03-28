@@ -1,0 +1,32 @@
+{
+    "manifests": {
+        "chiliz/api-first-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Chiliz\\ApiFirstBundle\\ChilizApiFirstBundle": [
+                        "dev",
+                        "test"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/packages/chiliz_api_first.yaml": "config/packages/chiliz_api_first.yaml"
+                }
+            },
+            "files": {
+                "config/packages/chiliz_api_first.yaml": {
+                    "contents": [
+                        "when@dev:",
+                        "    chiliz_api_first:",
+                        "        contract_url: '%env(API_CONTRACT_URL)%'",
+                        "when@test:",
+                        "    chiliz_api_first:",
+                        "        contract_url: '%env(API_CONTRACT_URL)%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "1daa8c38d930fb2d3e6f0a933be6a55512fa0b62"
+        }
+    }
+}

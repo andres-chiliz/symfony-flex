@@ -39,6 +39,9 @@
         "chiliz/events-bundle": [
             "1.0"
         ],
+        "chiliz/api-first-bundle": [
+            "1.0"
+        ],
         "chiliz/git-commit-composer": [
             "1.0"
         ],

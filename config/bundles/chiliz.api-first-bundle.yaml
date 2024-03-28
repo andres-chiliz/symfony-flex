@@ -1,0 +1,9 @@
+chiliz/api-first-bundle:
+  v1.0:
+    bundles:
+      Chiliz\ApiFirstBundle\ChilizApiFirstBundle: ['dev', 'test']
+    copyFromRecipe:
+      - config/packages/chiliz_api_first.yaml
+    env:
+      '#1': 'The URL to the OpenAPI Contract'
+      API_CONTRACT_URL: ''
