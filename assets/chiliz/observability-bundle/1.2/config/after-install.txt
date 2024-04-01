@@ -1,0 +1,3 @@
+Congratulations, you've installed chiliz/doctrine-bundle.
+
+Now you need to go to config/packages/chiliz_doctrine-bundle.yaml and update the configuration.

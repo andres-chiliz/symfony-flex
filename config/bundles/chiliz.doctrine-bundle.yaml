@@ -4,3 +4,12 @@ chiliz/doctrine-bundle:
       Chiliz\DoctrineBundle\ChilizDoctrineBundle: ['all']
     copyFromRecipe:
       - config/packages/chiliz_doctrine.yaml
+  v1.2:
+    bundles:
+      Chiliz\DoctrineBundle\ChilizDoctrineBundle: ['all']
+    copyFromRecipe:
+      - config/packages/chiliz_doctrine.yaml
+      - bin/post-release-migration
+      - bin/pre-release-migration
+    makefile:
+      - "-include vendor/chiliz/doctrine-bundle/make/doctrine.mk"

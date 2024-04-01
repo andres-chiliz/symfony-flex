@@ -1,0 +1,2 @@
+#!/bin/sh
+bin/console d:m:m --allow-no-migration -n  --configuration=vendor/chiliz/doctrine-bundle/config/release/pre_release_migration.yaml
