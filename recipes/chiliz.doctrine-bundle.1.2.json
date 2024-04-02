@@ -1,0 +1,50 @@
+{
+    "manifests": {
+        "chiliz/doctrine-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Chiliz\\DoctrineBundle\\ChilizDoctrineBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/packages/chiliz_doctrine.yaml": "config/packages/chiliz_doctrine.yaml",
+                    "bin/post-release-migration": "bin/post-release-migration",
+                    "bin/pre-release-migration": "bin/pre-release-migration"
+                },
+                "makefile": [
+                    "-include vendor/chiliz/doctrine-bundle/make/doctrine.mk"
+                ]
+            },
+            "files": {
+                "config/packages/chiliz_doctrine.yaml": {
+                    "contents": [
+                        "chiliz_doctrine:",
+                        "  connections:",
+                        "    <connection_name>:",
+                        "      replica: '%env(resolve:SLAVE_DATABASE_URL)%'",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "bin/post-release-migration": {
+                    "contents": [
+                        "#!/bin/sh",
+                        "bin/console d:m:m --allow-no-migration -n  --configuration=vendor/chiliz/doctrine-bundle/config/release/post_release_migration.yaml",
+                        ""
+                    ],
+                    "executable": false
+                },
+                "bin/pre-release-migration": {
+                    "contents": [
+                        "#!/bin/sh",
+                        "bin/console d:m:m --allow-no-migration -n  --configuration=vendor/chiliz/doctrine-bundle/config/release/pre_release_migration.yaml",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "c25b921a446f1d7468f3c110d9f681d320b64cf9"
+        }
+    }
+}
