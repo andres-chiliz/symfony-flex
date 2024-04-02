@@ -33,7 +33,7 @@
                         "bin/console d:m:m --allow-no-migration -n  --configuration=vendor/chiliz/doctrine-bundle/config/release/post_release_migration.yaml",
                         ""
                     ],
-                    "executable": false
+                    "executable": true
                 },
                 "bin/pre-release-migration": {
                     "contents": [
@@ -41,10 +41,10 @@
                         "bin/console d:m:m --allow-no-migration -n  --configuration=vendor/chiliz/doctrine-bundle/config/release/pre_release_migration.yaml",
                         ""
                     ],
-                    "executable": false
+                    "executable": true
                 }
             },
-            "ref": "c25b921a446f1d7468f3c110d9f681d320b64cf9"
+            "ref": "f7d0ade0310b82dad9a40f5efd6b60ca16d46788"
         }
     }
 }

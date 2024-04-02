@@ -163,9 +163,11 @@ class GenerateCommand extends Command
                 continue;
             }
             $manifest['copy-from-recipe'][$file] = $file;
+
+            $lines = explode(PHP_EOL, file_get_contents($filename));
             $files[$file] = [
-                "contents" => explode(PHP_EOL, file_get_contents($filename)),
-                "executable" => false,
+                "contents" => $lines,
+                "executable" => str_starts_with($lines[0] ?? "", '#!/'),
             ];
         }
     }
