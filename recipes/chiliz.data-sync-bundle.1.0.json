@@ -1,0 +1,33 @@
+{
+    "manifests": {
+        "chiliz/data-sync-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Chiliz\\DataSyncBundle\\ChilizDataSyncBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": {
+                    "config/packages/chiliz_data_sync_bundle.yaml": "config/packages/chiliz_data_sync_bundle.yaml"
+                },
+                "post-install-output": [
+                    "Congratulations, you've installed chiliz/data-sync-bundle.",
+                    "",
+                    "Now you need to go to config/packages/chiliz_data_sync_bundle.yaml and update the configuration.",
+                    ""
+                ]
+            },
+            "files": {
+                "config/packages/chiliz_data_sync_bundle.yaml": {
+                    "contents": [
+                        "chiliz_data_sync_bundle:",
+                        "    service_name: '%service_name%'",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "387ad12e7e3b9ae69a99c888bf2f6f3af852d5a8"
+        }
+    }
+}
