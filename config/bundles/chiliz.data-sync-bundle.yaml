@@ -1,0 +1,6 @@
+chiliz/data-sync-bundle:
+    v1.0:
+        bundles:
+            Chiliz\DataSyncBundle\ChilizDataSyncBundle: ['all']
+        copyFromRecipe:
+            - config/packages/chiliz_data_sync_bundle.yaml

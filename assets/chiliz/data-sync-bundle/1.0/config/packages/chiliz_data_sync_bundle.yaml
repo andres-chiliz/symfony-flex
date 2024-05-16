@@ -1,0 +1,2 @@
+chiliz_data_sync_bundle:
+    service_name: '%service_name%'
