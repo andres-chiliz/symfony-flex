@@ -1,6 +1,6 @@
 {
     "recipes": {
-        "chiliz/translation-bundle": [
+        "chiliz/service-clients-bundle": [
             "1.0"
         ],
         "chiliz/code-quality": [
@@ -11,22 +11,44 @@
             "2.9",
             "2.11"
         ],
-        "chiliz/configuration-bundle": [
+        "chiliz/be-utilities": [
             "1.0"
         ],
-        "chiliz/merger-bundle": [
+        "chiliz/observability-bundle": [
+            "1.0",
+            "1.2"
+        ],
+        "chiliz/blockchain-driver-bundle": [
             "1.0"
         ],
-        "chiliz/service-clients-bundle": [
+        "chiliz/data-sync-bundle": [
             "1.0"
         ],
-        "chiliz/git-commit-composer": [
+        "chiliz/translation-bundle": [
+            "1.0"
+        ],
+        "chiliz/gitlab-api-client-bundle": [
+            "1.0"
+        ],
+        "chiliz/jira-api-client-bundle": [
             "1.0"
         ],
         "chiliz/change-tracking-bundle": [
             "1.0"
         ],
-        "chiliz/be-utilities": [
+        "chiliz/doctrine-replica-repository-bundle": [
+            "1.0"
+        ],
+        "chiliz/configuration-bundle": [
+            "1.0"
+        ],
+        "chiliz/events-bundle": [
+            "1.0"
+        ],
+        "chiliz/api-first-bundle": [
+            "1.0"
+        ],
+        "chiliz/git-commit-composer": [
             "1.0"
         ],
         "chiliz/doctrine-bundle": [
@@ -36,32 +58,13 @@
         "chiliz/wallet-client-bundle": [
             "1.0"
         ],
+        "chiliz/merger-bundle": [
+            "1.0"
+        ],
         "chiliz/currency-bundle": [
             "1.0"
         ],
-        "chiliz/events-bundle": [
-            "1.0"
-        ],
         "chiliz/test-bundle": [
-            "1.0"
-        ],
-        "chiliz/observability-bundle": [
-            "1.0",
-            "1.2"
-        ],
-        "chiliz/doctrine-replica-repository-bundle": [
-            "1.0"
-        ],
-        "chiliz/jira-api-client-bundle": [
-            "1.0"
-        ],
-        "chiliz/gitlab-api-client-bundle": [
-            "1.0"
-        ],
-        "chiliz/api-first-bundle": [
-            "1.0"
-        ],
-        "chiliz/data-sync-bundle": [
             "1.0"
         ]
     },
