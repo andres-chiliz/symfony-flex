@@ -1,0 +1,22 @@
+{
+    "manifests": {
+        "chiliz/blockchain-driver-bundle": {
+            "manifest": {
+                "bundles": {
+                    "Chiliz\\BlockchainDriverBundle\\ChilizBlockchainDriverBundle": [
+                        "all"
+                    ]
+                },
+                "copy-from-recipe": [],
+                "post-install-output": [
+                    "Congratulations, you've installed chiliz/blockchain-driver-bundle.",
+                    "",
+                    "Now you need to go to config/packages/chiliz_blockchain_driver.yaml and update the configuration.",
+                    ""
+                ]
+            },
+            "files": [],
+            "ref": "701181a69c3fde251af70b14cca2b7d968d13cf6"
+        }
+    }
+}

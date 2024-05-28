@@ -1,0 +1,6 @@
+chiliz/blockchain-driver-bundle:
+  v1.0:
+    bundles:
+      Chiliz\BlockchainDriverBundle\ChilizBlockchainDriverBundle: ['all']
+    copyFromRecipe:
+      - config/packages/chiliz_blockchain_driver.yaml
