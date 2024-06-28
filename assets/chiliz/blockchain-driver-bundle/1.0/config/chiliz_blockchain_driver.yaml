@@ -1,5 +1,0 @@
-chiliz_blockchain_driver:
-  service_clients:
-    api_proxy_client:
-      chiliz: 'chiliz_api_proxy'
-      chilipay: 'chilipay_api_proxy'
