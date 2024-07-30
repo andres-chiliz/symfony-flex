@@ -1,0 +1,5 @@
+chiliz_blockchain_driver:
+  service_clients:
+    api_proxy_client:
+      chiliz: '' # name of the chiliz_service_clients_bundle.api_proxy_clients to use
+      chilipay: '' # name of the chiliz_service_clients_bundle.api_proxy_clients to use

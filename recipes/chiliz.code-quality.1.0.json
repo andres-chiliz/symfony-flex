@@ -461,7 +461,7 @@
                         "",
                         "<ruleset xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"",
                         "         xsi:noNamespaceSchemaLocation=\"vendor/squizlabs/php_codesniffer/phpcs.xsd\">",
-                        "    <arg name=\"parallel\" value=\"75\"/>",
+                        "    <arg name=\"parallel\" value=\"1\"/>",
                         "    <arg name=\"cache\" value=\".phpcs-cache\"/>",
                         "    <arg name=\"colors\"/>",
                         "    <arg name=\"extensions\" value=\"php\"/>",
@@ -589,7 +589,7 @@
                     "executable": false
                 }
             },
-            "ref": "e302273a08b6ad9b30a0bc75e9280d924304aa9b"
+            "ref": "c52c069ae51f66cab6d814cc52900ee59ba221ef"
         }
     }
 }

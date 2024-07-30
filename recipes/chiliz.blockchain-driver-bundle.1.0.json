@@ -7,7 +7,9 @@
                         "all"
                     ]
                 },
-                "copy-from-recipe": [],
+                "copy-from-recipe": {
+                    "config/packages/chiliz_blockchain_driver.yaml": "config/packages/chiliz_blockchain_driver.yaml"
+                },
                 "post-install-output": [
                     "Congratulations, you've installed chiliz/blockchain-driver-bundle.",
                     "",
@@ -15,8 +17,20 @@
                     ""
                 ]
             },
-            "files": [],
-            "ref": "701181a69c3fde251af70b14cca2b7d968d13cf6"
+            "files": {
+                "config/packages/chiliz_blockchain_driver.yaml": {
+                    "contents": [
+                        "chiliz_blockchain_driver:",
+                        "  service_clients:",
+                        "    api_proxy_client:",
+                        "      chiliz: '' # name of the chiliz_service_clients_bundle.api_proxy_clients to use",
+                        "      chilipay: '' # name of the chiliz_service_clients_bundle.api_proxy_clients to use",
+                        ""
+                    ],
+                    "executable": false
+                }
+            },
+            "ref": "0a911098a1013887be961f2ef18739411ba1469c"
         }
     }
 }

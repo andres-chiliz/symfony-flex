@@ -32,16 +32,20 @@
                 "config/packages/chiliz_observability.yaml": {
                     "contents": [
                         "chiliz_observability:",
+                        "    environment_name: '%env(DEPLOYMENT_ENVIRONMENT)%'",
+                        "    service_name: '%service_name%'",
                         "    sentry:",
                         "        dsn: '%env(SENTRY_DSN)%'",
                         "        release: '%env(RELEASE_TAG)%'",
                         "        traces_sample_rate: '%env(SENTRY_TRACES_SAMPLE_RATE)%'",
+                        "    open_telemetry:",
+                        "        metrics_interval: '%env(OPENTELEMERTY_METRICS_INTERVAL)%'",
                         ""
                     ],
                     "executable": false
                 }
             },
-            "ref": "6ae5d09728bd16be97cd2582e9494d5a4faff93f"
+            "ref": "503c8ca8f33769d8c5ea1c32b360a4f315c45108"
         }
     }
 }
