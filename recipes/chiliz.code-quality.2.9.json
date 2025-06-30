@@ -683,7 +683,7 @@
                         "{",
                         "  \"$schema\": \"https://docs.renovatebot.com/renovate-schema.json\",",
                         "  \"extends\": [",
-                        "    \"local>mediarex/shared/renovate-runner//presets/symfony-project\"",
+                        "    \"local>mediarex/shared/renovate-runner//presets/symfony-project\",",
                         "    \"local>mediarex/shared/renovate-runner//presets/symfony-bundle\"",
                         "  ]",
                         "}",
