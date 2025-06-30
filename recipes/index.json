@@ -71,8 +71,8 @@
     "branch": "dev",
     "is_contrib": true,
     "_links": {
-        "repository": "github.com/chiliz-group/symfony-flex",
-        "origin_template": "{package}:{version}@github.com/chiliz-group/symfony-flex:dev",
-        "recipe_template": "https://github.com/chiliz-group/symfony-flex/-/raw/dev/recipes/{package_dotted}.{version}.json"
+        "repository": "github.com/andres-chiliz/symfony-flex",
+        "origin_template": "{package}:{version}@github.com/andres-chiliz/symfony-flex:dev"
+        "recipe_template": "https://raw.githubusercontent.com/andres-chiliz/symfony-flex/dev/recipes/{package_dotted}.{version}.json"
     }
 }
